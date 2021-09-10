@@ -15,9 +15,7 @@ public class Lambda01 {
         System.out.println();
         yazdirLambda(l);
 
-
     }
-
 
     public static void yazdirJava(List<Integer> list) {
         for (Integer w : list) {

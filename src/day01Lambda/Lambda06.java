@@ -15,7 +15,6 @@ public class Lambda06 {
 
         CiftSayiKupCarpimi(l);
 
-
     }
 
     public static void CiftSayiKupCarpimi(List<Integer> l) {

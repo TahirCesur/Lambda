@@ -14,7 +14,6 @@ public class Lambda05 {
         CiftSayiKareToplam(l);
     }
 
-
     public static void CiftSayiKareToplam(List<Integer> l) {
         System.out.print(l.stream().distinct().filter(t -> t % 2 == 0).map(t -> t * t).reduce(0, (x, y) -> x + y));
         // 216

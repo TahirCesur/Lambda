@@ -13,6 +13,7 @@ public class Lambda04 {
         List<Integer> l = new ArrayList<>(Arrays.asList(14, 9, 13, 4, 9, 2, 4, 14, 15));
 
         farklitekSayiKup(l);
+
     }
 
     public static void farklitekSayiKup(List<Integer> l) {

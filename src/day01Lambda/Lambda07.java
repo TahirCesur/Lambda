@@ -8,13 +8,11 @@ import java.util.List;
 public class Lambda07 {
     public static void main(String[] args) {
 
-        // List teki farklı ve 5 ten büyük ve çift elemanlarının yarısını alıp ters sıralayarak list olarak yazdır.
+        // List teki elemanlari alıp ters sıralayarak list olarak yazdıriniz...
 
         List<Integer> l = new ArrayList<>(Arrays.asList(14, 9, 13, 4, 9, 2, 4, 14, 15));
 
         TersDuzSirala(l);
-
-        
 
     }
 

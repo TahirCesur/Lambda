@@ -16,7 +16,6 @@ public class Lambda02 {
         System.out.println();
         ciftSayilambda(l);
 
-
     }
 
     // Lambda (fonctional) yoluyla

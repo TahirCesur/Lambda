@@ -34,6 +34,8 @@ public class Lambda01 {
         sondanIkinciSiralaIlk(l);
         System.out.println();
         terstenSiralaIlkYazdir(l);
+
+
     }
 
 
@@ -103,7 +105,7 @@ public class Lambda01 {
 
     // 7) Öğeleri uzunluklarına göre sıraladıktan sonra büyük harflerle yazdırmak için bir yöntem oluşturun
     public static void siralaBuyut(List<String> l) {
-        l.stream().map(String::toUpperCase).sorted(Comparator.comparing(String::length)).forEach(methodLambda02::bosluklaYazdir);
+        l.stream().sorted(Comparator.comparing(String::length)).map(String::toUpperCase).forEach(methodLambda02::bosluklaYazdir);
         // ALİ ALİ ATA AYSİMA MEHMET YÜKSEL MUSTAFA BEDİRHAN SÜLEYMAN ABDURRAHMAN
     }
 
@@ -127,7 +129,7 @@ public class Lambda01 {
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-    // 10) Tüm elemanların uzunluklarının 12'den az olup olmadığını kontrol etmek için bir metod olusturun
+    // 10) Tüm elemanların uzunluklarını 12'den az olup olmadığını kontrol etmek için bir metod olusturun
     public static void ebikGabik(List<String> l) {
 
     //allMatch(): bütün elemanlarda olmasını istediğimiz şeyleri yazarız sonuç boolean verir
@@ -147,7 +149,7 @@ public class Lambda01 {
     // Not : anyMatch(): en az bir elemanda olmasını istediğimiz bir özellik varsa kullanırız,sonuç boolean dır
     // örneğin==>anyMatch(t-> t.endsWith("R"))== en az bir eleman R ile bitiyorsa true,yoksa false
         boolean result3= l.stream().anyMatch(t->t.endsWith("R"));
-        System.out.println("elemanlardan herhangi biri R ile bitiyormu : " +result3); // elemanlardan herhangi biri R ile bitiyormu : false
+        System.out.println("elemanlardan herhangi biri R ile bitiyormu : " +result3); // false -- elemanlardan herhangi biri R ile bitiyormu : false
     }
 
     // elemanları sondan 2. elemanlarına gore sıralayıp ilk elemanı yazdır
