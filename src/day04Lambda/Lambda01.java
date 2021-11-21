@@ -8,7 +8,7 @@ public class Lambda01 {
 
         // 1- 1 den 20 ye kadar olan sayilari yazdiriniz...
 
-        IntStream.rangeClosed(1,20).forEach(methodLambda03::bosluklaYazdir);
+        IntStream.rangeClosed(1, 20).forEach(methodLambda03::bosluklaYazdir);
         // 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
 
         System.out.println();
@@ -27,7 +27,7 @@ public class Lambda01 {
         // 1. yol
         System.out.println(IntStream.rangeClosed(2, 14).filter(methodLambda03::ciftMi).reduce(1, Math::multiplyExact)); // 645120
         // 2. yol
-        System.out.println(IntStream.rangeClosed(1, 20).filter(t->t%2==0).limit(7).reduce(1, Math::multiplyExact)); // 645120
+        System.out.println(IntStream.rangeClosed(1, 20).filter(t -> t % 2 == 0).limit(7).reduce(1, Math::multiplyExact)); // 645120
 
         // 5- 6'dan büyük ilk 150 tek sayma sayisinin toplamini bulunuz... ==> 7, 9, 11, 13, 15, 17, 19
         System.out.println(IntStream.iterate(7, t -> t + 2).limit(150).sum()); // 23400
@@ -39,10 +39,8 @@ public class Lambda01 {
         System.out.println(IntStream.iterate(2, t -> t + 2).limit(23).sum()); // 552
 
         // 8- (11 den 33 e kadar her tam sayinin rakamlarinni hesaplamak icin bir method olusturunuz...
-        IntStream.rangeClosed(11,33).map(methodLambda03::rakamlarToplami).forEach(methodLambda03::bosluklaYazdir);
+        IntStream.rangeClosed(11, 33).map(methodLambda03::rakamlarToplami).forEach(methodLambda03::bosluklaYazdir);
         // 2 3 4 5 6 7 8 9 10 2 3 4 5 6 7 8 9 10 11 3 4 5 6
-
-
 
 
     }

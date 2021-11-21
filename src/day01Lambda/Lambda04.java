@@ -17,7 +17,7 @@ public class Lambda04 {
     }
 
     public static void farklitekSayiKup(List<Integer> l) {
-        l.stream().distinct().filter(t->t%2==1).map(t->t*t*t).forEach(t-> System.out.print(t+" "));
+        l.stream().distinct().filter(t -> t % 2 == 1).map(t -> t * t * t).forEach(t -> System.out.print(t + " "));
         // 729 2197 3375
     }
 }

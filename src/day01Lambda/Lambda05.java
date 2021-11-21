@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Lambda05 {
     public static void main(String[] args) {
-        
+
         // Listedeki tekrarli elemanlari silip cift sayi olanlarin karelerini toplayan bir method olusturun..
 
         List<Integer> l = new ArrayList<>(Arrays.asList(14, 9, 13, 4, 9, 2, 4, 14, 15));

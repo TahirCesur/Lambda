@@ -16,7 +16,7 @@ public class Lambda03 {
     }
 
     public static void tekSayilarinKaresi(List<Integer> l) {
-        l.stream().filter(t->t%2==1).map(t->t*t).forEach(t-> System.out.print(t+" ")); // 81 169 81 225
+        l.stream().filter(t -> t % 2 == 1).map(t -> t * t).forEach(t -> System.out.print(t + " ")); // 81 169 81 225
     }
 
 }
